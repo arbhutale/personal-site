@@ -48,8 +48,8 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "react-scripts --openssl-legacy-provider start",
+        "build": "react-scripts --openssl-legacy-provider  build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "docker_pull": "docker-compose pull",
@@ -86,5 +86,8 @@
         "eslint-plugin-react": "^7.24.0",
         "eslint-plugin-react-hooks": "^4.2.0",
         "prettier": "^2.3.2"
+    },
+    "engines": {
+        "node": "16.x"
     }
 }
